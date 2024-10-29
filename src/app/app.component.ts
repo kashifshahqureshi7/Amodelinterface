@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {dataType } from './user';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'modelinterface';
+  getdata()
+  {
+    const data:dataType = {
+      Name: 'Kashif Shah',
+      id: 12,
+      Pakistani:true
+
+    }
+    return data
+  }
 }
